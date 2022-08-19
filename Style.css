@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243,243,243);
+    background-image: url(Imagens/Fundo\ 2.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -54,6 +54,8 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
+    border-radius: 30px;
+    border-style: groove;
 }
 
 .group:nth-child(1) {
@@ -73,13 +75,13 @@ body {
 }
 
 .profile-photo img{
-    height: 9rem;
+    height: 6rem;
 }
 
 .instagram-loguin{
     background-color: #0095E6;
     color: #ffffffff;
-    padding: 5px;
+    padding: 8px;
     border-radius: 4px;
 }
 
@@ -90,6 +92,71 @@ body {
 
 .not-account{
     color: rgb(160,160,160);
+}
+
+.linkblue {
+    color: #0095f6;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+
+.app-download:nth-child(1) {
+    background-image: url("imagens/apple-button.png")
+}
+
+.app-download:nth-child(2) {
+    background-image: url("imagens/googleplay-button.png")
+}
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-happer {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continua {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
 }
 
 
